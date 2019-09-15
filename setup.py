@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name = 'E2EP-CL',
-    packages = ['E2EP-CL'],
+    name = 'e2epcl',
+    packages = ['e2epcl'],
     entry_points = {
-            "console_scripts": ['E2EP-CL = E2EP-CL.cli:main']
+            "console_scripts": ['e2epcl = e2epcl.cli:main']
         },
     version = '1.0',
     description = 'Command line end to end processing',
