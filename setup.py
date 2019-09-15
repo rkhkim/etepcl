@@ -18,6 +18,11 @@ setup(
         'scikit-learn',
         'pyparsing',
         'matplotlib',
-        'click'
+        'click',        
+        'tensorflow',
+        'keras', 
+        'os',
+        'math',
+        
     ],
 )
