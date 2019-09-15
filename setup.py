@@ -4,7 +4,7 @@ setup(
     name = 'etepcl',
     package = ['etepcl'],
     entry_points = {
-            "console_scripts": ['etepcl = etepcl.cli:main']
+            "console_scripts": ['etepcl = etepcl.cli']
         },
     version = '1.0',
     description = 'Command line end to end processing',
