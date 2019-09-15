@@ -2,10 +2,11 @@ from setuptools import setup
 
 setup(
     name = 'e2epcl',
+    package = 'e2epcl'
     entry_points = {
             "console_scripts": ['e2epcl = E2EP.cli:main']
         },
-    version = '1.0',
+    version = '1.1',
     description = 'Command line end to end processing',
     author = 'Anmol Warman, Ryan Kim, Shawn Chao, Danny Guo',
     url = 'https://github.com/anmolwarman/E2EP-CL',
