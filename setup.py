@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = 'etepcl',
-    package = 'etepcl'
+    package = ['etepcl'],
     entry_points = {
             "console_scripts": ['etepcl = etepcl.cli:main']
         },
