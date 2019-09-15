@@ -1,5 +1,5 @@
 from __future__ import absolute_import, division, print_function
-from .neuralnet import NeuralNet, Conv
+from .e2ep import NeuralNet, Conv
 import numpy as np
 import click
 from .writer import Writer
