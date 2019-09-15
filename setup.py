@@ -6,7 +6,7 @@ setup(
     entry_points = {
             "console_scripts": ['etepcl = etepcl.cli:main']
         },
-    version = '1.3',
+    version = '1.4',
     description = 'Command line end to end processing',
     author = 'Anmol Warman',
     url = 'https://github.com/anmolwarman/etepcl',
