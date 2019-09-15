@@ -1,41 +1,25 @@
-# E2EP (Command Line Neural Network)
+# E2EP (End to End Processing)
 
-E2EP provides a simple command line interface to a python implementation of a convolutional neural network. E2EP gives a quick and easy way to play around, test a hypothesis, and make predictions without having to write code.
+E2EP is a command line tool built in python that allows for the easy implementation of both a simple neural network and a convolutional neural network. Using E2EP, the user has a quick and easy way to play around, test a hypothesis, and make predictions without having to write code.
 
-## Installation
+## Setup
 
-Installation of E2EP is provided through pip, just run:
+Run the following line to install the tool
 ```
 pip install E2EP
 ```
-
-If there are missing libraries, run:
+ 
+Run
 
 ```
 pip install numpy scipy scikit-learn pyparsing matplotlib click tensorflow keras os math
 ```
 
-to install every required library. After pip finishes the install run the following `command -v E2EP` to check that the executable has been successfully added. 
+to install every required library
 
-**Troubleshooting**
+## Process
 
-When you run `neuralcli` for the first time you may get an output similar to below
-```
-/usr/local/lib/python2.7/site-packages/matplotlib/font_manager.py:273: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
-warnings.warn('Matplotlib is building the font cache using fc-list. This may take a moment.')
-```
-This is just a warning from matplotlib, and will be removed the next time you run the command.
-
-Additionally matlibplot may throw another error that will produce an output similar to:
-```
-**RuntimeError**: Python is not installed as a framework
-```
-
-To fix this issue follow the steps outlined [here](http://stackoverflow.com/questions/21784641/installation-issue-with-matplotlib-python)
-
-## Use
-
-Neuralcli comes bundled with three main commands.
+E2EP is has two parts: *pre-processing* followed by *analysis*. Each step includes data visualization.
 
 ### Train
 
