@@ -1,15 +1,15 @@
 from setuptools import setup
 
 setup(
-    name = 'e2ep',
-    packages = ['e2ep'],
+    name = 'E2EP-CL',
+    packages = ['E2EP-CL'],
     entry_points = {
-            "console_scripts": ['e2ep = e2ep.cli:main']
+            "console_scripts": ['E2EP-CL = E2EP-CL.cli:main']
         },
     version = '1.0',
     description = 'Command line end to end processing',
     author = 'Anmol Warman, Ryan Kim, Shawn Chao, Danny Guo',
-    url = 'https://github.com/anmolwarman/e2ep',
+    url = 'https://github.com/anmolwarman/E2EP-CL',
     keywords = ['machine learning', 'ai', 'neural network'],
     setup_requires=["numpy"],
     install_requires=[
