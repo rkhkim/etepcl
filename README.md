@@ -1,25 +1,18 @@
-# E2EP-CL (End to End Processing - Command Line)
+# ETEPCL (End to End Processing - Command Line)
 
-E2EP is a command line tool built in python that allows for the easy implementation of pre-processing algorithms and both a simple neural network and a convolutional neural network. Using E2EP, the user has a quick and easy way to play around, test a hypothesis, and make predictions without having to write code.
+ETEPCL is a command line tool that allows for immediate end to end processing of data with python implementations of pre-processing algorithms and both a simple neural network (datapoints) and a convolutional neural network (images). Using ETEP, the user has a quick and easy way to play around, test a hypothesis, and make predictions without having to write code.
 
 ## Setup
 
-Run the following line to install the tool
+Installation of ETEPCL is completed through pip. Run the following line to install the tool:
 ```
-pip install E2EP
+pip install ETEPCL
 ```
- 
-Run
-
-```
-pip install numpy scipy scikit-learn pyparsing matplotlib click tensorflow keras os math
-```
-
-to install every required library
+If you have don't have every requisite library installed, installation time will be prolonged as pip will install all relevant dependencies to allow ETEPCL to function properly.
 
 ## Process
 
-E2EP is has two parts: *pre-processing* followed by *analysis*. Each step includes data visualization.
+E2EP has two parts: *pre-processing* followed by *analysis*. Each step includes data visualization.
 
 ### Pre-Processing
 
@@ -27,7 +20,7 @@ Pre-processing reduces the dimensionality or the number of features or variables
 
 Two pre-processing algorithms: Principal Component Analysis (PCA) and Bandpass.
 
-PCA is used for general data. Bandpass is used for image data
+PCA is used for general data. Bandpass is used for image-specific data.
 
 #### PCA
 
