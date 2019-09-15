@@ -39,7 +39,7 @@ Takes all of the features and converts them in a set of linearly uncorrelated va
 $ etepcl PCA ./dataset.csv
 ```
 
-#### bandpass
+#### Bandpass
 
 Bandpass filtering is used to downscale images (make more blurry) to improve computational efficiency.
 
