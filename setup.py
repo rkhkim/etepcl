@@ -3,12 +3,12 @@ from setuptools import setup
 setup(
     name = 'etepcl',
     package = ['etepcl'],
-    entry_points = {
-            "console_scripts": ['etepcl = etepcl.cli']
-        },
-    version = '1.0',
+#     entry_points = {
+#             "console_scripts": ['etepcl = etepcl.cli']
+#         },
+    version = '1.1',
     description = 'Command line end to end processing',
-    author = 'Anmol Warman, Ryan Kim, Shawn Chao, Danny Guo',
+    author = 'Anmol Warman',
     url = 'https://github.com/anmolwarman/etepcl',
     keywords = ['machine learning', 'ai', 'neural network'],
     setup_requires=["numpy"],
