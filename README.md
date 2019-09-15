@@ -22,18 +22,38 @@ Two pre-processing algorithms: Principal Component Analysis (PCA) and Bandpass.
 
 PCA is used for general data. Bandpass is used for image-specific data.
 
+
 #### PCA
 
 Takes all of the features and converts them in a set of linearly uncorrelated variables
 
-#### Bandpass
-
-Bandpass filtering is used to downscale images (make more blurry) to improve computational efficiency
+**parameters:**
 
 | name | type | description                                                                      | example        |
 |------|------|----------------------------------------------------------------------------------|----------------|
-| X    | csv  | a file that contains the entire dataset                                          | ./train.csv
+| X    | file | a file path to a CSV which holds your data                                       | ./dataset.csv  |
 
+**example:**
+
+```
+$ etepcl PCA ./dataset.csv
+```
+
+#### bandpass
+
+Bandpass filtering is used to downscale images (make more blurry) to improve computational efficiency.
+
+**parameters:**
+
+| name | type  | description                                                                      | example        |
+|------|-------|----------------------------------------------------------------------------------|----------------|
+| img  | image | a file path to an image                                                          | ./brain.jpg    |
+
+**example:**
+
+```
+$ etepcl bandpass ./brain.jpg
+```
 
 ### Analysis
 
