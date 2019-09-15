@@ -110,10 +110,10 @@ The prediction command takes a set of learned weights and a given input to predi
 **example:**
 
 ```
-$ neuralcli predict ./x.csv 3 ./params.csv 
+$ etepcl predict ./x.csv 3 ./params.csv 
 ```
 
-Neuralcli will now print a prediction in INT form, corresponding to the index of you output labels.
+Etepcl will now print a prediction in INT form, corresponding to the index of you output labels.
 e.g. `0` will correspond to you first classification label. 
 
 
@@ -141,16 +141,8 @@ The test command gives some primitive feedback about the correctness of your hyp
 **example:**
 
 ```
-$ neuralcli train ./X.csv ./Y.csv --step=50 --normalize=true
+$ etepcl train ./X.csv ./Y.csv --step=50 --normalize=true
 ```
-
-Neural cli will then run the test sequence printing its progress as it increases the size of the training set.
-
-![](http://i.imgur.com/TFlhHJN.gif)
-
-After this runs it will then print a plot of the hypothesis error against the size of training set the weights where learned on. Below is an example graph plotted from the iris dataset.
-
-![](http://i.imgur.com/o3ZTQxY.png)
 
 #### Convolutional Neural Network (CNN)
 
