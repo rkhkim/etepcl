@@ -1,0 +1,7 @@
+.DS_Store
+dist/*
+build/*
+neuralcli.egg-info/*
+*.pyc
+.eggs/
+venvpy27/*
