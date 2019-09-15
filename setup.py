@@ -4,7 +4,7 @@ setup(
     name = 'e2epcl',
     packages = ['e2epcl'],
     entry_points = {
-            "console_scripts": ['e2epcl = e2epcl.cli:main']
+            "console_scripts": ['e2epcl = e2ep.cli:main']
         },
     version = '1.0',
     description = 'Command line end to end processing',
