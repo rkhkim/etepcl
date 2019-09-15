@@ -30,10 +30,16 @@ Takes all of the features and converts them in a set of linearly uncorrelated va
 
 Bandpass filtering is used to downscale images (make more blurry) to improve computational efficiency
 
+| name | type | description                                                                      | example        |
+|------|------|----------------------------------------------------------------------------------|----------------|
+| X    | csv  | a file that contains the entire dataset                                          | ./train.csv
+
+
 ### Analysis
 
 #### Neural Network (NN)
 
+##### Train
 Trains simple neural network for general data and outputs the weights
 
 **parameters:**
@@ -62,15 +68,7 @@ $ E2EP train ./X.csv ./Y.csv --output=./weights.csv --normalize=true
 Once you run the train command the neural network will intialize and begin to learn the weights, you should see an output similar to bellow if the `--verbose` flag is set to true.
 
 
-#### Convolutional Neural Network (CNN)
-
-
-
-
-
-
-
-### Predict
+##### Predict
 
 The prediction command takes a set of learned weights and a given input to predict a an ouput. The learned weights are loaded into the neural network by providing an file which holds them in a rolled 1 * n vector shape. In order for the predict command to work correctly these parameters need to be unrolled and therefore you need to provide the sizes of the input layer, hidden layer, and output labels that you wish to unroll the 
 
@@ -98,7 +96,8 @@ $ neuralcli predict ./x.csv 3 ./params.csv
 Neuralcli will now print a prediction in INT form, corresponding to the index of you output labels.
 e.g. `0` will correspond to you first classification label. 
 
-### Test
+
+##### Test
 
 The test command gives some primitive feedback about the correctness of your hypothesis by running a diagnostic check on the given data set and expected output. This method plots the the margin of prediction error against the increase in size of training examples. This can be useful to determine what is going wrong with your hypothesis, i.e. whether it is underfitting or overfitting the training set.
 
@@ -132,3 +131,14 @@ Neural cli will then run the test sequence printing its progress as it increases
 After this runs it will then print a plot of the hypothesis error against the size of training set the weights where learned on. Below is an example graph plotted from the iris dataset.
 
 ![](http://i.imgur.com/o3ZTQxY.png)
+
+#### Convolutional Neural Network (CNN)
+
+
+
+
+
+
+
+
+
