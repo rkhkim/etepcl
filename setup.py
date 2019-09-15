@@ -8,9 +8,9 @@ setup(
         },
     version = '1.0',
     description = 'Command line end to end processing',
-    author = 'Ryan Kim, Danny Guo, Anmol Warman, Shawn Chao',
+    author = 'Anmol Warman, Ryan Kim, Shawn Chao, Danny Guo',
     url = 'https://github.com/anmolwarman/e2ep',
-    keywords = ['machine learning', 'ai', 'neural nework'],
+    keywords = ['machine learning', 'ai', 'neural network'],
     setup_requires=["numpy"],
     install_requires=[
         'numpy',
