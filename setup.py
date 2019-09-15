@@ -22,7 +22,7 @@ setup(
         'tensorflow',
         'keras', 
         'os',
-        'math',
+        'math'
         
     ],
 )
