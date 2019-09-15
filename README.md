@@ -1,4 +1,4 @@
-# E2EP (End to End Processing)
+# E2EP-CL (End to End Processing - Command Line)
 
 E2EP is a command line tool built in python that allows for the easy implementation of pre-processing algorithms and both a simple neural network and a convolutional neural network (CNN). Using E2EP, the user has a quick and easy way to play around, test a hypothesis, and make predictions without having to write code.
 
@@ -23,8 +23,7 @@ E2EP is has two parts: *pre-processing* followed by *analysis*. Each step includ
 
 ### Pre-Processing
 
-
-The train command takes a set of input features along with their expected outputs and performs backpropogation to learn the weights for a neural network. These weights can be saved to an output file to use for classification prediction later. The command takes the following.
+Pre-processing reduces the dimensionality or the number of features in the data so that the important features remain
 
 **parameters:**
 
