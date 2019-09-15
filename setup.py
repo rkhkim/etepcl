@@ -2,7 +2,6 @@ from setuptools import setup
 
 setup(
     name = 'e2epcl',
-    packages = ['e2epcl'],
     entry_points = {
             "console_scripts": ['e2epcl = E2EP.cli:main']
         },
