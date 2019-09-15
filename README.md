@@ -35,7 +35,7 @@ Takes all of the features and converts them in a set of linearly uncorrelated va
 
 #### Bandpass
 
-Bandpass filtering is used to enhance the edges of the image
+Bandpass filtering is used to downscale images (make more blurry) to improve computational efficiency
 
 ### Analysis
 
@@ -63,12 +63,12 @@ Trains simple neural network for general data and outputs the weights
 **example:**
 
 ```
-$ neuralcli train ./X.csv ./Y.csv --output=./weights.csv --normalize=true
+$ E2EP train ./X.csv ./Y.csv --output=./weights.csv --normalize=true
 ```
 
 Once you run the train command the neural network will intialize and begin to learn the weights, you should see an output similar to bellow if the `--verbose` flag is set to true.
 
-![](http://i.imgur.com/EqPJD2s.gif)
+
 
 #### Convolutional Neural Network (CNN)
 
