@@ -19,9 +19,6 @@ setup(
         'matplotlib',
         'click',        
         'tensorflow',
-        'keras', 
-        'os',
-        'math'
-        
+        'keras'
     ],
 )
